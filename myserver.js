@@ -8,7 +8,7 @@ var publicDir = require('path').join(__dirname,'/public');
 app.use(express.static(publicDir));
 
 var bodyParser= require('body-Parser');
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 //khi mo website mac dinh
 app.get("/",(req,res)=>{
